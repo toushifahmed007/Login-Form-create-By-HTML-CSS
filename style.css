@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.formSection {
+    background-image: url("bg image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.formSection form {
+    border-radius: 15px;
+    width: 19%;
+    background-color: #00000017;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+legend {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formSection #tousIdf {
+    color: #f3ebeb;
+    text-align: center;
+    margin-bottom: 1.4em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.userIdf,
+.userPass {
+    padding: 0 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.userPass:focus {
+    border-color: #1877F2;
+    box-shadow: 0 0 3px rgba(24, 119, 242, 0.6);
+}
+
+.userIdf,
+.userPass {
+    padding: 0 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+.userIdf:focus-within,
+.userPass:focus-within {
+    border-color: #1877F2;
+    box-shadow: 0 0 4px rgba(24, 119, 242, 0.6);
+}
+
+.userIdf input,
+.userPass input {
+    font-size: 15px;
+    padding-left: 5px;
+    border: none;
+    height: 43px;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.userIdf,
+.userPass,
+i {
+    cursor: pointer;
+    color: #c0b5b5;
+}
+
+.rOfpPass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftPass input,
+label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.rOfpPass a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+.rOfpPass a:hover,.lastInfo a:hover{
+    text-decoration: underline;
+}
+.btnArea {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    transition: .6s;
+    border-radius: 10px;
+    background-color: #1877F2;
+}
+
+.btnArea:hover {
+    background-color: #1b53ec;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ffffff;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 10px;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 10px;
+}
+
+.otherAc img {
+    width: 23px;
+}
+
+.otherAc button {
+    width: 100%;
+    background-color: #19ff944d;
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 17px;
+    border: none;
+    transition: .4s;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+}
+
+.lastInfo p {
+    text-align: center;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.lastInfo a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.otherAc button:hover {
+    background-color: #056969;
+}
